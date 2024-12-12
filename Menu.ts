@@ -8,18 +8,19 @@ export function main() {
 
     let opcao: number;
 
-    /* Instancias (objetos) da Classe Conta
-    const c1 = new Conta(1, 123, 1, "Jonas", 100000);
-    c1.visualizar();
-    console.log(c1.sacar(100.00));
-    c1.visualizar();
+    // //Instancias (objetos) da Classe Conta
+    // const c1 = new Conta(1, 123, 1, "Jonas", 100000);
+    // c1.visualizar();
+    // console.log(c1.sacar(100.00));
+    // c1.visualizar();
 
-    const c2 = new Conta(2, 123, 2, "Aline", 200000);
-    c2.visualizar();
-    c2.depositar(100.00);
-    c2.visualizar();*/
+    // const c2 = new Conta(2, 123, 2, "Aline", 200000);
+    // c2.visualizar();
+    // c2.depositar(100.00);
+    // c2.visualizar();
 
-    /*const cc1 = new ContaCorrente(3, 789, 1, "Andressa", 100000, 1000);
+    //conta corrente
+    const cc1 = new ContaCorrente(3, 789, 1, "Andressa", 100000, 1000);
     cc1.visualizar();
 
     //saque na conta corrente
@@ -28,10 +29,25 @@ export function main() {
 
     //deposito na conta corrente
     cc1.depositar(2000);
-    cc1.visualizar();*/
+    cc1.visualizar();
+
+    //conta corrente 2
+    const cc2 = new ContaCorrente(4, 456, 1, "Beatriz", 300000, 200);
+    cc2.visualizar();
+
+    //saque
+    cc2.sacar(200);
+    cc2.visualizar();
+
+    //deposito
+    cc2.depositar(400);
+    cc2.visualizar();
 
     //conta poupanca
-    const cp1 = new ContaPoupanca(4, 789, 2, "Lia", 500000, 1);
+    const cp1 = new ContaPoupanca(5, 789, 2, "Lia", 500000, 1);
+    cp1.visualizar();
+    //altera aniversario
+    cp1.aniversario = (2);
     cp1.visualizar();
 
     console.log("");
